@@ -1,0 +1,96 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Odd2
+  m_Shader: {fileID: 4800000, guid: 6a4f4ebb8dc45f5429d99201ac97fba1, type: 3}
+  m_ShaderKeywords: FANCY_PARALLAX WORLDSPACE WORLEY _EMISSION
+  m_LightmapFlags: 1
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _Bias: 0
+    - _BumpAmt: 2
+    - _BumpOctaves: 7.25
+    - _BumpPersistence: 0.854
+    - _BumpScale: 12.92
+    - _Cutoff: 0.5
+    - _DepthLayers: 8
+    - _DetScale: 1
+    - _DetailNormalMapScale: 1
+    - _DstBlend: 0
+    - _FANCY_PARALLAX: 1
+    - _GlossMapScale: 1
+    - _Glossiness: 0.378
+    - _GlossyReflections: 1
+    - _Metallic: 0.091
+    - _Mode: 0
+    - _OcclusionStrength: 1
+    - _Octaves: 3
+    - _Parallax: 61.88
+    - _Persistence: 0.655
+    - _Polish: 4
+    - _Scale: 11
+    - _Seed: 19388.43
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 1
+    - _SrcBlend: 1
+    - _UVSec: 0
+    - _VoroScale: 4.71
+    - _WORLDSPACE: 1
+    - _WORLEY: 1
+    - _ZWrite: 1
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Color1: {r: 0.19606736, g: 0.6102941, b: 0.1256488, a: 1}
+    - _Color2: {r: 1, g: 0, b: 0.93103504, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _Mush: {r: 1, g: 1, b: 0, a: 0}
+    - _Offset: {r: 0, g: 0, b: 0, a: 1}
+    - _VoroComp: {r: -0.13, g: 1, b: -1.21, a: 2.43}
