@@ -19,6 +19,10 @@ public class WallDestroyer : MonoBehaviour
 
     public GameObject[] wall;
 
+    private void Start() {
+        globalVar.whichToDestroy = 0;
+    }
+
     private void Awake()
     {
         wallControllerScript = wallController.GetComponent<WallControllerScript>();
@@ -34,6 +38,5 @@ public class WallDestroyer : MonoBehaviour
             //Destroy(GameObject.FindWithTag("Wall"));
             wallControllerScript.wallSpeed += 0.5;
         }
-
     }
 }
