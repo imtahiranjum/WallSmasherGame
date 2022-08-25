@@ -6,14 +6,14 @@ public class HealthManager : MonoBehaviour
 {
     // Start is called before the first frame update
 
-    public static int health = 3;
+    public static int health = 0;
 
     public Image[] hearts;
     public Sprite fullheart;
     public Sprite emptyheart;
 
     private void Start() {
-        health = 3;
+        health = 0;
     }
 
     // Update is called once per frame

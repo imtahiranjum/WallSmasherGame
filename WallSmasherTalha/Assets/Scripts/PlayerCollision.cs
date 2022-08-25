@@ -13,7 +13,6 @@ public class PlayerCollision : MonoBehaviour
             colided = true;
             globalVar.whichToDestroy++;
             Destroy(other.gameObject);
-            HealthManager.health--;
             Explode();
             StartCoroutine(GetHurt());
             Debug.Log(globalVar.whichToDestroy);
