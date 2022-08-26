@@ -11,7 +11,12 @@ public class PlayerCollision : MonoBehaviour
     private void OnCollisionEnter(Collision other) {
         if(other.gameObject.tag == "Wall" && colided == false){
             colided = true;
+            sliderController.getInstance().slider.value = 0;
+            sliderController.is_disabled = false;
+            sliderController.getInstance().slider.interactable = true;
+            StartCoroutine(disableSlider());
             globalVar.whichToDestroy++;
+            WallDestroyer.wallCounter--;
             Destroy(other.gameObject);
             Explode();
             StartCoroutine(GetHurt());
@@ -34,5 +39,13 @@ public class PlayerCollision : MonoBehaviour
         Physics.IgnoreLayerCollision(6,7, false); 
 
 
+    }
+
+    IEnumerator disableSlider()
+    {
+        yield return new WaitForSeconds(3f);
+        sliderController.is_disabled = true;
+        sliderController.getInstance().slider.interactable = false;
+        
     }
 }

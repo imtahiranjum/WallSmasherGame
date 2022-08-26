@@ -12,14 +12,14 @@ public class globalVar
 
 public class WallDestroyer : MonoBehaviour
 {
-
-
+    public static int wallCounter = 5;
     WallControllerScript wallControllerScript;
     [SerializeField] protected GameObject wallController;
 
     public GameObject[] wall;
 
     private void Start() {
+        wallCounter = 5;
         globalVar.whichToDestroy = 0;
     }
 
@@ -33,6 +33,7 @@ public class WallDestroyer : MonoBehaviour
     {
         if (other.gameObject.tag == "Wall")
         {
+            wallCounter--;
             Destroy(wall[globalVar.whichToDestroy]);
             globalVar.whichToDestroy++;
             //Destroy(GameObject.FindWithTag("Wall"));

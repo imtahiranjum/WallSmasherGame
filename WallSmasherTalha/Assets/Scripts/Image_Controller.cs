@@ -92,7 +92,7 @@ public class Image_Controller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
     public static Image_Controller getInst()
     {

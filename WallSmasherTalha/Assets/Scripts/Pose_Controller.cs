@@ -20,7 +20,7 @@ public class Pose_Controller : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(anim_test());
+        //StartCoroutine(anim_test());
         inst = this;
         
        rot= Quaternion.Euler(transform.rotation.x, transform.rotation.y, transform.rotation.z);
